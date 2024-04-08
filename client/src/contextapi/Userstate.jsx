@@ -20,7 +20,7 @@ export default function ApiState(props) {
      //For creating a new user:
      const createuser = async (userdata) => {
         try {
-            const response = await fetch("http://localhost:5000/api/auth/createuser", {
+            const response = await fetch("https://dribbleintern.vercel.app/api/auth/createuser", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -41,7 +41,7 @@ export default function ApiState(props) {
             
   const sendEmail = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/auth/sendemail', {
+      const response = await fetch('https://dribbleintern.vercel.app/api/auth/sendemail', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -64,7 +64,7 @@ export default function ApiState(props) {
   };
     
     const getUser = async () => {
-        const response = await fetch("http://localhost:5000/api/auth/createuser", {
+        const response = await fetch("https://dribbleintern.vercel.app/api/auth/createuser", {
             method: "GET", // *GET, POST, PUT, DELETE, etc.
             headers: {
                 "Content-Type": "application/json",
